@@ -8,7 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class PasswordConfig {
 
-    // Reused by mission 3 (login) to verify passwords
+    // Used to hash on register and verify on login
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
